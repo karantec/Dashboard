@@ -6,13 +6,13 @@ import InputText from '../../components/Input/InputText';
 
 function Login() {
     const INITIAL_LOGIN_OBJ = {
-        username: "admin",
-        password: "admin"
+        username: "",
+        password: ""
     };
 
     const ADMIN_CREDENTIALS = {
-        username: "admin",
-        password: "admin" // Admin credentials stored as username and password
+        username: "minutosdeliveryshop@gmail.com",
+        password: "Minutos@2025" // Admin credentials stored as username and password
     };
 
     const [loading, setLoading] = useState(false);
