@@ -38,14 +38,7 @@ const ChangePassword=lazy(()=>import('../pages/protected/ChangePassword'))
 const About=lazy(()=>import('../pages/protected/About'));
 
 const routes = [
-  {
-    path: '/dashboard', // the url
-  component: Dashboard, // view rendered
-  },
-  {
-    path: '/welcome', // the url
-    component: Welcome, // view rendered
-  },
+  
  
   {
     path: '/Users',
