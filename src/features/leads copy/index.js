@@ -11,7 +11,7 @@ const FinanceAccounting = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/auth/users');
+        const response = await axios.get('https://bakcend-n9kq.onrender.com/User/get');
         setUsers(response.data);
       } catch (err) {
         setError('Failed to fetch users');
@@ -41,30 +41,32 @@ const FinanceAccounting = () => {
           <table className="w-full table-auto border-collapse border border-gray-300">
             <thead className="bg-gray-100">
               <tr>
-                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Profile</th>
-                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Name</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">First Name</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Last Name</th>
                 <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Email</th>
                 <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Phone</th>
-                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Address</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Business Name</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Business Type</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Street Address</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">City</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">State</th>
+                <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Pin Code</th>
                 <th className="border border-gray-300 py-3 px-4 text-left text-sm font-medium text-gray-600">Date Joined</th>
               </tr>
             </thead>
             <tbody>
               {currentUsers.map((user) => (
                 <tr key={user._id} className="border-b border-gray-300">
-                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">
-                    <img src={user.profileImage} alt={user.name} className="w-12 h-12 rounded-full" />
-                  </td>
-                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.name}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.firstName}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.lastName}</td>
                   <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.email}</td>
                   <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.phone}</td>
-                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">
-                    {user.addresses.map((address) => (
-                      <div key={address._id} className="mb-2">
-                        <strong>{address.type}:</strong> {address.address}, {address.pinCode}
-                      </div>
-                    ))}
-                  </td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.businessName}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.businessType}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.streetAddress}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.city}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.state}</td>
+                  <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{user.pinCode}</td>
                   <td className="border border-gray-300 py-3 px-4 text-sm text-gray-800">{new Date(user.createdAt).toLocaleDateString()}</td>
                 </tr>
               ))}

@@ -38,75 +38,14 @@ const routes = [
   {
     
     
-    name: 'HomePage Management',
-  },
-
-  {
-    path: '/app/About',
-    icon: <FcAbout className={iconClasses} />,
-    name: 'About',
-  },
-
-
-  
-  {
-    
-    name: 'Category Management',
-  },
-
-  {
-    path: '/app/Category',
-    icon: <MdCategory className={iconClasses} />,
-    name: 'Category',
-  },
-
-
-  {
-    
-    
-    name: 'Product Management',
-  },
-  
-  {
-    path: '/app/leads',
-    icon: <FaAddressBook className={iconClasses} />,
-    name: 'Add Products',
-  },
-   
-  {
-    path: '/app/View',
-    icon: <FaAddressBook className={iconClasses} />,
-    name: 'View Products',
-  },
-  {
-    
- 
     name: 'User Management',
   },
+  
+ 
   {
     path: '/app/Users',
     icon: <FaUserAstronaut className={iconClasses} />,
     name: 'Users',
-  },
-  {
-    
- 
-    name: 'Order Management',
-  },
-  {
-    path: '/app/Order',
-    icon: <FaUserAstronaut className={iconClasses} />,
-    name: 'View Order',
-  },
-  {
-    
- 
-    name: 'Blog Management',
-  },
-  {
-    path: '/app/Blog',
-    icon: <FaUserAstronaut className={iconClasses} />,
-    name: 'View Blog',
   },
   
 ];

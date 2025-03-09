@@ -46,130 +46,20 @@ const routes = [
     path: '/welcome', // the url
     component: Welcome, // view rendered
   },
-  {
-    path: '/leads',
-    component: Leads,
-  },
-  {
-    path: '/Category',
-    component: Category,
-  },
-  {
-    path: '/About',
-    component: About,
-  },
-  {
-
-    path: '/View',
-    component: ViewProducts,
-  },
+ 
   {
     path: '/Users',
     component: FinanceAccounting,
   },
-  {
-    
-    path: '/Order',
-    component: OrderList,
-  },
-  {
-    
-    path: '/Blog',
-    component: ViewBlog,
-  },
-  {
-    path: '/troubleshoot',
-    component: TroubleShoot,
-  },
-  {
-    path: '/callback',
-    component: CallBackRequest,
-  },
-  {
-    path: '/RequestDemo',
-    component: RequestDemo,
-  },
-  {
-    path: '/BookDemo',
-    component: BookDemo,
-  },
-  {
-    path: '/Feedback',
-    component: Feedback,
-  },
-  {
-    path: '/settings-team',
-    component: Team,
-  },
-  {
-    path: '/calendar',
-    component: Calendar,
-  },
-  {
-    path: '/transactions',
-    component: Transactions,
-  },
-  {
-    path: '/Register',
-    component: Registration,
-  },
-  {
-    path: '/Manual',
-    component: Manual,
-  },
-  {
-    path: '/EditProfile',
-    component: EditProfile,
-  },
-  {
-    path:'/ChangePassword',
-    component:ChangePassword,
-  },
+  
+  
+  
+  
 
-  {
-    path: '/Address',
-    component: Address,
-  },
-  {
-    path: '/settings-billing',
-    component: Bills,
-  },
-  {
-    path: '/getting-started',
-    component: GettingStarted,
-  },
-  {
-    path: '/PrivacyPolicy',
-    component: PrivacyPolicy,
-  },
-  {
-    path: '/Faq',
-    component: FAQPage,
-  },
-  {
-    path: '/termofservice',
-    component:TermofServie ,
-  },
-  {
-    path: '/features',
-    component: DocFeatures,
-  },
-  {
-    path: '/components',
-    component: DocComponents,
-  },
-  {
-    path: '/integration',
-    component: Integration,
-  },
-  {
-    path: '/charts',
-    component: Charts,
-  },
-  {
-    path: '/404',
-    component: Page404,
-  },
+  
+  
+ 
+  
   {
     path: '/blank',
     component: Blank,
