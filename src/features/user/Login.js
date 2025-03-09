@@ -11,7 +11,7 @@ function Login() {
     };
 
     const ADMIN_CREDENTIALS = {
-        username: "minutosdeliveryshop@gmail.com",
+        username: "minutosdeliveryshop",
         password: "Minutos@2025" // Admin credentials stored as username and password
     };
 
