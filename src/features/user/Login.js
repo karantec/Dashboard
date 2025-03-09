@@ -57,14 +57,7 @@ function Login() {
         <div className="min-h-screen bg-base-200 flex items-center justify-center py-8">
             <div className="card mx-auto w-full max-w-lg shadow-xl rounded-xl overflow-hidden">
                 <div className="grid md:grid-cols-2 grid-cols-1 bg-base-100 rounded-xl">
-                    <div className="relative hidden md:block">
-                        <img
-                            src="Designer2.jpeg"
-                            alt="Login Image"
-                            className="w-full h-full object-cover rounded-l-xl"
-                        />
-                        <div className="absolute inset-0 bg-black opacity-30"></div>
-                    </div>
+                   
                     <div className='py-16 px-10'>
                         <h2 className='text-3xl font-semibold mb-4 text-center text-primary'>Login</h2>
                         <form onSubmit={submitForm}>
